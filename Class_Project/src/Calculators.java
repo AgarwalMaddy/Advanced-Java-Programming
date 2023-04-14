@@ -2,8 +2,8 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class GUIProgram extends JFrame {
-    public GUIProgram() {
+public class Calculators extends JFrame {
+    public Calculators() {
         // Set frame title
         super("GUI Program");
 
@@ -59,7 +59,7 @@ public class GUIProgram extends JFrame {
     }
 
     public static void main(String[] args) {
-        new GUIProgram();
+        new Calculators();
     }
 }
 
