@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Advanced Java Programming.iml" filepath="$PROJECT_DIR$/.idea/Advanced Java Programming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Class_Project/Class_Project.iml" filepath="$PROJECT_DIR$/Class_Project/Class_Project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java DSA with Kunal/First Java/First Java.iml" filepath="$PROJECT_DIR$/Java DSA with Kunal/First Java/First Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java DSA with Kunal/Java DSA with Kunal.iml" filepath="$PROJECT_DIR$/Java DSA with Kunal/Java DSA with Kunal.iml" />
+    </modules>
+  </component>
+</project>
