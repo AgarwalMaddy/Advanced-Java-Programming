@@ -5,13 +5,13 @@ import javax.swing.*;
 public class Calculators extends JFrame {
     public Calculators() {
         // Set frame title
-        super("GUI Program");
+        super("Calculators");
 
         // Set layout
         setLayout(new BorderLayout());
 
         // Create title label and add to frame
-        JLabel titleLabel = new JLabel("Title", SwingConstants.CENTER);
+        JLabel titleLabel = new JLabel("Different Types of Calculators", SwingConstants.CENTER);
         add(titleLabel, BorderLayout.NORTH);
 
         // Create panel for choices and buttons
@@ -19,22 +19,22 @@ public class Calculators extends JFrame {
         choicesPanel.setLayout(new GridLayout(3, 2));
 
         // Create labels and buttons for choices
-        String[] choices = {"Choice 1", "Choice 2", "Choice 3"};
+        String[] choices = {"SI Calculator", "CI Calculator", "Currency Converter"};
         for (String choice : choices) {
             JLabel choiceLabel = new JLabel(choice);
             JButton choiceButton = new JButton("Go to " + choice);
             switch (choice) {
-                case "Choice 1" -> choiceButton.addActionListener(new ActionListener() {
+                case "SI Calculator" -> choiceButton.addActionListener(new ActionListener() {
                     public void actionPerformed(ActionEvent e) {
                         new Choice1Frame();
                     }
                 });
-                case "Choice 2" -> choiceButton.addActionListener(new ActionListener() {
+                case "CI Calculator" -> choiceButton.addActionListener(new ActionListener() {
                     public void actionPerformed(ActionEvent e) {
                         new Choice2Frame();
                     }
                 });
-                case "Choice 3" -> choiceButton.addActionListener(new ActionListener() {
+                case "Currency Converter" -> choiceButton.addActionListener(new ActionListener() {
                     public void actionPerformed(ActionEvent e) {
                         new Choice3Frame();
                     }
@@ -66,13 +66,13 @@ public class Calculators extends JFrame {
 class Choice1Frame extends JFrame {
     public Choice1Frame() {
         // Set frame title
-        super("Choice 1");
+        super("Simple Interest Calculator");
 
         // Set layout
         setLayout(new BorderLayout());
 
         // Create heading label and add to frame
-        JLabel headingLabel = new JLabel("Heading", SwingConstants.CENTER);
+        JLabel headingLabel = new JLabel("SI Calculator", SwingConstants.CENTER);
         add(headingLabel, BorderLayout.NORTH);
 
         // Create panel for labels and text fields
@@ -80,7 +80,7 @@ class Choice1Frame extends JFrame {
         inputPanel.setLayout(new GridLayout(5, 2));
 
         // Create labels and text fields
-        String[] labels = {"Label 1", "Label 2", "Label 3", "Interest", "Total"};
+        String[] labels = {"Principal Amount", "Rate of Interest", "Time (in years)", "Interest", "Total Amount"};
         JTextField[] textFields = new JTextField[5];
         for (int i = 0; i < labels.length; i++) {
             JLabel label = new JLabel(labels[i]);
@@ -133,13 +133,13 @@ class Choice1Frame extends JFrame {
 class Choice2Frame extends JFrame {
     public Choice2Frame() {
         // Set frame title
-        super("Choice 2");
+        super("Compound Interest Calculator");
 
         // Set layout
         setLayout(new BorderLayout());
 
         // Create heading label and add to frame
-        JLabel headingLabel = new JLabel("Heading", SwingConstants.CENTER);
+        JLabel headingLabel = new JLabel("CI Calculator", SwingConstants.CENTER);
         add(headingLabel, BorderLayout.NORTH);
 
         // Create panel for labels and input fields
@@ -147,7 +147,7 @@ class Choice2Frame extends JFrame {
         inputPanel.setLayout(new GridLayout(6, 2));
 
         // Create labels and text fields
-        String[] labels = {"Label 1", "Label 2", "Label 3", "Compound Frequency", "Interest", "Total"};
+        String[] labels = {"Principal Amount", "Rate of Interest", "Time (in years)", "Compound Frequency", "Interest", "Total Amount"};
         JTextField[] textFields = new JTextField[6];
         for (int i = 0; i < labels.length; i++) {
             JLabel label = new JLabel(labels[i]);
@@ -211,13 +211,13 @@ class Choice2Frame extends JFrame {
 class Choice3Frame extends JFrame {
     public Choice3Frame() {
         // Set frame title
-        super("Choice 3");
+        super("Currency Converter");
 
         // Set layout
         setLayout(new BorderLayout());
 
         // Create heading label and add to frame
-        JLabel headingLabel = new JLabel("Heading", SwingConstants.CENTER);
+        JLabel headingLabel = new JLabel("Convert Currency", SwingConstants.CENTER);
         add(headingLabel, BorderLayout.NORTH);
 
         // Create panel for currency conversion
@@ -310,14 +310,20 @@ class Choice3Frame extends JFrame {
                         outputValue = inputValue / 74.14;
                     } else if (inputCurrency.equals("INR") && outputCurrency.equals("EUR")) {
                         outputValue = inputValue / 86.67;
+                    } else if (inputCurrency.equals("INR") && outputCurrency.equals("INR")) {
+                        outputValue = inputValue;
                     } else if (inputCurrency.equals("USD") && outputCurrency.equals("INR")) {
                         outputValue = inputValue * 74.14;
+                    } else if (inputCurrency.equals("USD") && outputCurrency.equals("USD")) {
+                        outputValue = inputValue;
                     } else if (inputCurrency.equals("USD") && outputCurrency.equals("EUR")) {
                         outputValue = inputValue * 0.85;
                     } else if (inputCurrency.equals("EUR") && outputCurrency.equals("INR")) {
                         outputValue = inputValue * 86.67;
                     } else if (inputCurrency.equals("EUR") && outputCurrency.equals("USD")) {
                         outputValue = inputValue / 0.85;
+                    } else if (inputCurrency.equals("EUR") && outputCurrency.equals("EUR")) {
+                        outputValue = inputValue;
                     }
                     outputValueField.setText(String.format("%.2f", outputValue));
                 } catch (NumberFormatException ex) {
