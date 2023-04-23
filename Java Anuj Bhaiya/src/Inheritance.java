@@ -1,3 +1,5 @@
+import Encapsulation.Encapsulation_Intro;
+
 import java.util.Scanner;
 
 public class Inheritance {
@@ -17,6 +19,9 @@ public class Inheritance {
         //It first checks it location in Developer class if not found then it looks for it in its parent.
         d1.job();
 
+        Encapsulation_Intro obj1 = new Encapsulation_Intro();
+        obj1.publiclearning();
+        //obj1.defaultLearning(); // Error display: Default only works in same package.
     }
 }
 
