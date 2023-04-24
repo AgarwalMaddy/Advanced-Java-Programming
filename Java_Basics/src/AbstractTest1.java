@@ -1,4 +1,4 @@
-//Concept of abstract class where object of abstract base class holding reference of sub-class.
+//Concept of abstract class where object of abstract base class holding reference of subclass.
 abstract class Vehicle
 {
    public abstract  void enginestart();         // abstract method
@@ -7,15 +7,14 @@ abstract class Vehicle
    }
 }
 class Car extends Vehicle {
-    public void enginestart()						//method overridden
-    {
+    public void enginestart(){					//method overridden
         System.out.println("Car engine");
         // car engine implementation
     }
 }
 class Bus extends Vehicle {
 	public void enginestart() {
-		System.out.println("Bus engine");
+        System.out.println("Bus engine");
 	}
 }
 public class AbstractTest1 {
@@ -31,5 +30,6 @@ public class AbstractTest1 {
         
         v1 = new Bus();
         v1.enginestart();
+        v1.showcost(1000000);
     }
 }

@@ -4,8 +4,8 @@ import java.util.*;
 class Petrol {	
 	float price = 110;
 	float amount, quantity;
-	void setPrice(float p) {
-		price=p; 
+	void setPrice(float price) {
+		this.price=price;
 	}
 	void getPrice( ) {
 		System.out.println("The price = "+price);
@@ -44,13 +44,9 @@ class PetrolPump {
 		System.out.println("\nEnter Quantity or Amount. enter q or a\n");
 		Scanner sc = new Scanner(System.in);
 		choice = sc.nextLine();
-		switch(choice) {		//use switch case
-		case "q":
-			p1.enterQuantity();	
-			break;
-		case "a": 
-			p1.enterAmount();	
-			break;
-	}
+		switch (choice) {        //use switch case
+			case "q" -> p1.enterQuantity();
+			case "a" -> p1.enterAmount();
+		}
 }
 }
