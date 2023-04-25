@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Access Modifiers/Access Modifiers.iml" filepath="$PROJECT_DIR$/Access Modifiers/Access Modifiers.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Advanced Java Programming.iml" filepath="$PROJECT_DIR$/.idea/Advanced Java Programming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Beans Java/Beans Java.iml" filepath="$PROJECT_DIR$/Beans Java/Beans Java.iml" />
       <module fileurl="file://$PROJECT_DIR$/Class_Project/Class_Project.iml" filepath="$PROJECT_DIR$/Class_Project/Class_Project.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java DSA with Kunal/First Java/First Java.iml" filepath="$PROJECT_DIR$/Java DSA with Kunal/First Java/First Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JDBC/JDBC.iml" filepath="$PROJECT_DIR$/JDBC/JDBC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java AWT and Swing/Java AWT and Swing.iml" filepath="$PROJECT_DIR$/Java AWT and Swing/Java AWT and Swing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java Anuj Bhaiya/Java Anuj Bhaiya.iml" filepath="$PROJECT_DIR$/Java Anuj Bhaiya/Java Anuj Bhaiya.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java DSA with Kunal/Java DSA with Kunal.iml" filepath="$PROJECT_DIR$/Java DSA with Kunal/Java DSA with Kunal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java Exception Handling/Java Exception Handling.iml" filepath="$PROJECT_DIR$/Java Exception Handling/Java Exception Handling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java IO Serialization/Java IO Serialization.iml" filepath="$PROJECT_DIR$/Java IO Serialization/Java IO Serialization.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java Multithreading/Java Multithreading.iml" filepath="$PROJECT_DIR$/Java Multithreading/Java Multithreading.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java_Basics/Java_Basics.iml" filepath="$PROJECT_DIR$/Java_Basics/Java_Basics.iml" />
     </modules>
   </component>
 </project>
