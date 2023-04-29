@@ -10,7 +10,8 @@ public class Insert_Database {
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/JavaClass" , "root" , "1223456");
             Statement stmt = conn.createStatement();
 
-            String query1 = "Insert Into movies values (4, 'Ajab Prem ki Gazab Kahani')";
+            String query1 = "Insert Into movies values (4, 'Ajab Prem ki " +
+                    "Gazab Kahani')";
             stmt.addBatch(query1);
             stmt.executeBatch();
 
