@@ -1,6 +1,6 @@
 import java.nio.file.*;
-public class Try1 {
-    private static String DIRECTORY = "C:\\HIV AIDS";
+public class Exists {
+    private static String DIRECTORY = "C:\\Winter Inter Semester 2\\Advanced Java Programming\\";
     public static void check(String fileName) {
         Path filePath = Paths.get(DIRECTORY, fileName);
         if (Files.exists(filePath)) {
@@ -10,7 +10,7 @@ public class Try1 {
         }
     }
     public static void main(String[] args) {
-        check("index.html");
-        check("hiv.html");// replace "example.txt" with the name of the file you want to check
+        check("file3.docx");
+        check("file4.html");
     }
 }
