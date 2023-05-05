@@ -15,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/Java Exception Handling/Java Exception Handling.iml" filepath="$PROJECT_DIR$/Java Exception Handling/Java Exception Handling.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java IO Serialization/Java IO Serialization.iml" filepath="$PROJECT_DIR$/Java IO Serialization/Java IO Serialization.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java Multithreading/Java Multithreading.iml" filepath="$PROJECT_DIR$/Java Multithreading/Java Multithreading.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java NIO/Java NIO.iml" filepath="$PROJECT_DIR$/Java NIO/Java NIO.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java_Basics/Java_Basics.iml" filepath="$PROJECT_DIR$/Java_Basics/Java_Basics.iml" />
     </modules>
   </component>
