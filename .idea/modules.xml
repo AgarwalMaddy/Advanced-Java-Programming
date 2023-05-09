@@ -17,6 +17,7 @@
       <module fileurl="file://$PROJECT_DIR$/Java Multithreading/Java Multithreading.iml" filepath="$PROJECT_DIR$/Java Multithreading/Java Multithreading.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java NIO/Java NIO.iml" filepath="$PROJECT_DIR$/Java NIO/Java NIO.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java_Basics/Java_Basics.iml" filepath="$PROJECT_DIR$/Java_Basics/Java_Basics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MiniProject/MiniProject.iml" filepath="$PROJECT_DIR$/MiniProject/MiniProject.iml" />
     </modules>
   </component>
 </project>
