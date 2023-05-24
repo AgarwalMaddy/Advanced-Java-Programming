@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add User Form</title>
+    <style>
+
+#registration {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#lName {
+position : absolute;
+left : 10px;
+top: 100px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#tName {
+position : absolute;
+left : 100px;
+top : 100px;
+width : 200px;
+height : 20px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#lPassword {
+position : absolute;
+left : 10px;
+top: 150px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#tPassword {
+position : absolute;
+left : 100px;
+top : 150px;
+width : 200px;
+height : 20px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+::placeholder{
+    position : absolute;
+    left : 5px;
+    top : 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#rButton{
+position : absolute;
+top : 215px;
+left : 135px;
+width : 80px;
+height : 25px;
+}
+
+</style>
+</head>
+<body>
+
+<form name = "detailsForm" method = "POST" action = "File2.java">
+    <h2 id = "registration">REGISTRATION FORM</h2>
+    <label for = "tName" id = "lName">User Name</label>
+    <input type = "text" name = "pName" class = "tField" id = "tName" placeholder="Enter Your Name"></input>
+    <label for = "tPassword" id = "lPassword">Password</label>
+    <input type = "password" name = "pPassword" class = "tField" id = "tPassword" placeholder="Enter Your Password"></input>
+    <input type = "submit" value = "Register" id = "rButton">
+
+</form>
+</body>
+</html>

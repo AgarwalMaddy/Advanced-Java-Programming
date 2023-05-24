@@ -7,5 +7,7 @@
     </content>
     <orderEntry type="jdk" jdkName="17" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="apache-tomcat-10.1" level="project" />
+    <orderEntry type="library" name="servlet-api" level="project" />
   </component>
 </module>

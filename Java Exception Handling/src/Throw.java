@@ -14,7 +14,7 @@ class Throw {
 	public static void main(String[] args) {
 		//Person p1 = new Person();
 		try {
-			Person.checkAge(17); // Set age to 15 (which is below 18...)
+			Person.checkAge(87); // Set age to 15 (which is below 18...)
 		}
 		catch(ArithmeticException e){
 			System.out.print(e.getMessage());

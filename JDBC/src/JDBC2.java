@@ -10,19 +10,19 @@ public class JDBC2 {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
             // Create a connection to the MySQL database
-            String conn_string = "jdbc:mysql://localhost/movies";
+            String conn_string = "jdbc:mysql://localhost/Javaclass";
             String user = "root";
             String password = "123456";
             conn = DriverManager.getConnection(conn_string, user, password);
 
             // Create a statement and execute a SELECT query
             stmt = conn.createStatement();
-            rs = stmt.executeQuery("SELECT * FROM students");
+            rs = stmt.executeQuery("SELECT * FROM miniproject");
 
             // Iterate through the result set and print the data
             while (rs.next()) {
-                String name = rs.getString("name");
-                int age = rs.getInt("age");
+                String name = rs.getString("Name");
+                String age = rs.getString("Genre");
                 System.out.println(name + ", " + age);
             }
         } catch (ClassNotFoundException ex) {
